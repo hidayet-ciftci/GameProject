@@ -13,7 +13,8 @@ namespace RegisterProject
     {
         static void Main(string[] args)
         {
-            PlayerManager playerManager = new PlayerManager();
+            PlayerManager playerManager = new PlayerManager(new NewServiceManager());
+            // PlayerManager playerManager2 = new PlayerManager(new PlayerValidationManager());
             GameManager gameManager = new GameManager();
             CampaignManager campaignManager = new CampaignManager();
 
@@ -85,11 +86,11 @@ namespace RegisterProject
                 Id = 3,
                 Ad = "Cemil",
                 Soyad = "bakiş",
-                TcNo = "465231457",
+                TcNo = "111",
                 BirthDate = "2002-08-07"
             };
             Console.WriteLine("ID 3 olan oyuncunun : ");
-            playerManager.Validation(player5);
+            
             Console.WriteLine("------------ Oyun kısmı --------------");
             Game game1 = new Game 
             {
@@ -146,6 +147,7 @@ namespace RegisterProject
             Console.WriteLine("---------- sell with campagin -------------");
             gameManager.SellGameWithCamp(game1, player5, campaign1);
             Console.WriteLine(" ---------------------- ");
+            playerManager.Add(player5);
         }
     }
 }

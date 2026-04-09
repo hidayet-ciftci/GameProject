@@ -47,7 +47,10 @@
     <Compile Include="campaign1\CampaignManager.cs" />
     <Compile Include="game\Game.cs" />
     <Compile Include="game\GameManager.cs" />
-    <Compile Include="IRegisterSystem.cs" />
+    <Compile Include="IPlayerValidationService.cs" />
+    <Compile Include="NewServiceManager.cs" />
+    <Compile Include="PlayerValidationManager.cs" />
+    <Compile Include="Player\IPlayerService.cs" />
     <Compile Include="Player\PlayerManager.cs" />
     <Compile Include="Player\Players.cs" />
     <Compile Include="Program.cs" />
