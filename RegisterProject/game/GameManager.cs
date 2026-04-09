@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RegisterProject.game
 {
-    public class GameManager
+    public class GameManager : IGameService
     {
         public void SellGame(Game game,Players player)
         {
