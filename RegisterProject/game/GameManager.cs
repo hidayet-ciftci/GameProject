@@ -11,7 +11,7 @@ namespace RegisterProject.game
     {
         public void SellGame(Game game,Players player)
         {
-            Console.WriteLine(player.Ad+" "+player.Soyad+ " " + game.Name + " oyununu " + game.Price + " fiyatina satin aldi");
+            Console.WriteLine(player.Ad+" "+player.Soyad+ " " + game.Name + " oyununu " + game.Price + " fiyatina satin aldis");
         }
         public void SellGameWithCamp(Game game, Players player, Campaign campaign)
         {
