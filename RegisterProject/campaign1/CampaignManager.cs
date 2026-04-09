@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RegisterProject.campaign1
 {
-    public class CampaignManager 
+    public class CampaignManager : ICampaginService
     {
         public List<Campaign> campaigns;
         public CampaignManager()
